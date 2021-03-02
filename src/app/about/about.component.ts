@@ -21,6 +21,8 @@ commentaire={date:null ,message:""};
 
   ngOnInit(): void {
   }
+  //premiere maniere
+
   onAddCommentaire(){
     // pour affecter la date
     this.commentaire.date=new Date();
@@ -29,5 +31,15 @@ commentaire={date:null ,message:""};
     //pour initialiser le input
     this.commentaire={date:null, message:""};
   }
+  //deuxieme maniere 2
+
+  // onAddCommentaire(C){
+  //   // pour affecter la date
+  //   this.commentaire.date=new Date();
+  //   //remplir les donnees de l'input dans un tableau
+  //   this.comments.push(C);
+
+  
+
 
 }
