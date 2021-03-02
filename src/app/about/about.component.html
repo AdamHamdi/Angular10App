@@ -18,11 +18,11 @@
             </div>
             <div class=" mt-4">
 
-                <form>
+                <form #f="ngForm" (ngSubmit)="onAddCommentaire(f.value)">
                     <div class="form-group d-flex">
                         <label for="control-label mr-2"> Message:  </label>
-                        <input type="text" class="form-control ml-2 col-md-4" ngModel="" [(ngModel)]=" commentaire.message " name="message ">
-                        <button [disabled]="!commentaire.message " class=" btn btn-primary ml-2 " (click)="onAddCommentaire() "> Ajouter un commentaire</button>
+                        <input type="text" class="form-control ml-2 col-md-4" name="message" required="" [(ngModel)]="commentaire.message">
+                        <button [disabled]="!f.valid" class=" btn btn-primary ml-2 "> Ajouter un commentaire</button>
 
                     </div>
                 </form>

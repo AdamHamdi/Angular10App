@@ -23,23 +23,25 @@ commentaire={date:null ,message:""};
   }
   //premiere maniere
 
-  onAddCommentaire(){
-    // pour affecter la date
-    this.commentaire.date=new Date();
-    //remplir les donnees de l'input dans un tableau
-    this.comments.push(this.commentaire);
-    //pour initialiser le input
-    this.commentaire={date:null, message:""};
-  }
-  //deuxieme maniere 2
-
-  // onAddCommentaire(C){
+  // onAddCommentaire(){
   //   // pour affecter la date
   //   this.commentaire.date=new Date();
   //   //remplir les donnees de l'input dans un tableau
-  //   this.comments.push(C);
-  //   // this.commentaire={date:null, message:""};
+  //   this.comments.push(this.commentaire);
+  //   //pour initialiser le input
+  //   this.commentaire={date:null, message:""};
   // }
+  //deuxieme maniere 2
+
+  onAddCommentaire(C){
+    // pour affecter la date
+  console.log(C);
+    C.date=new Date();
+    //remplir les donnees de l'input dans un tableau
+    this.comments.push(C);
+     //pour initialiser le input
+     this.commentaire.message="";
+  }
 
 
 
