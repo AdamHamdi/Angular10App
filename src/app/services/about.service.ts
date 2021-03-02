@@ -20,6 +20,7 @@ export class AboutService {
 
 
   addComment(C){
+
     C.date=new Date();
     this.comments.push(C);
     this.commentaire.message="";
