@@ -38,8 +38,9 @@ commentaire={date:null ,message:""};
   //   this.commentaire.date=new Date();
   //   //remplir les donnees de l'input dans un tableau
   //   this.comments.push(C);
+  //   // this.commentaire={date:null, message:""};
+  // }
 
-  
 
 
 }
