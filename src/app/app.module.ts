@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { FormsModule } from '@angular/forms';
+import { AboutService } from './services/about.service';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,15 @@ import { FormsModule } from '@angular/forms';
     ContactsComponent
   ],
   imports: [
-    BrowserModule,
+
+  BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    AboutService,
+  ],
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
